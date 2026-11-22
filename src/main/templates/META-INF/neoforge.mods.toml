@@ -36,6 +36,6 @@ side = "CLIENT"
 [[dependencies."${mod_id}"]]
 modId = "sable_player_ragdoll"
 type = "required"
-versionRange = "[0.7.2,0.8)"
+versionRange = "[0.8.1,0.9)"
 ordering = "AFTER"
 side = "CLIENT"

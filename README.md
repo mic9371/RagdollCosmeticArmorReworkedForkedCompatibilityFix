@@ -17,7 +17,7 @@ rendering settings.
 
 - Minecraft 1.21.1
 - NeoForge 21.1.249
-- Sable Ragdolls 0.7.2.x and its required Sable library
+- Sable Ragdolls 0.8.1 (0.8.x) and its required Sable library
 - Cosmetic Armor Reworked Forked 1.21.1-0.0.4 or a compatible 0.0.x release
 - Architectury API 13.0.8 or newer
 
@@ -44,6 +44,13 @@ On Linux or macOS:
 ```
 
 The resulting JAR is written to `build/libs/`.
+
+## Credits
+
+- Original mod by [TanukiBear](https://github.com/TanukiBearMan/RagdollCosmeticArmorReworkedForkedCompatibilityFix).
+- Updated for Sable Ragdolls 0.8.1 by [mic9371](https://github.com/mic9371).
+- [Sable: Ragdolls](https://modrinth.com/mod/sable-ragdolls) by Leonardoinc22 and
+  [Cosmetic Armor Reworked Forked](https://github.com/zzik2/CosmeticArmorReworkedForked) by their respective authors.
 
 ## License
 

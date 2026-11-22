@@ -30,11 +30,20 @@ class ModMetadataTest {
     }
 
     @Test
-    void generatedMetadataUsesReleaseVersionOne() throws Exception {
+    void sableRagdollsRangeTargetsTheZeroPointEightSeries() throws Exception {
+        var range = VersionRange.createFromVersionSpec(dependencyVersionRange("sable_player_ragdoll"));
+
+        assertTrue(range.containsVersion(new DefaultArtifactVersion("0.8.1")));
+        assertFalse(range.containsVersion(new DefaultArtifactVersion("0.7.5")));
+        assertFalse(range.containsVersion(new DefaultArtifactVersion("0.9.0")));
+    }
+
+    @Test
+    void generatedMetadataUsesReleaseVersionOnePointOne() throws Exception {
         var matcher = MOD_VERSION.matcher(metadata());
 
         assertTrue(matcher.find(), "mod version is missing");
-        assertEquals("1.0", matcher.group(1));
+        assertEquals("1.1", matcher.group(1));
     }
 
     private static String dependencyVersionRange(String modId) throws Exception {
